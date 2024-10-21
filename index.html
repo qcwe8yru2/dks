@@ -269,21 +269,19 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
         import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
 
-        const firebaseConfig = {
-            apiKey: "AIzaSyDb7xwJY_RzxESIXN8GdcBpX3F2gglclX8",
-            authDomain: "pi-zeta.firebaseapp.com",
-            databaseURL: "https://pi-zeta-default-rtdb.firebaseio.com",
-            projectId: "pi-zeta",
-            storageBucket: "pi-zeta.appspot.com",
-            messagingSenderId: "1048639958496",
-            appId: "1:1048639958496:web:7739a25dc04ed833be8f85",
-            measurementId: "G-LW0YQPC6L0"
-        };
+  const firebaseConfig = {
+    apiKey: "AIzaSyAnTdYnIhUwY1UHliCKjjRACunUkTK6yvo",
+    authDomain: "oioooi.firebaseapp.com",
+    databaseURL: "https://oioooi-default-rtdb.firebaseio.com",
+    projectId: "oioooi",
+    storageBucket: "oioooi.appspot.com",
+    messagingSenderId: "23928448368",
+    appId: "1:23928448368:web:453580709259dcedf85bb5",
+    measurementId: "G-E65LVPQDTJ"};
 
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
 
-        // 사이드바 토글
         const toggleSidebarBtn = document.getElementById('toggle-sidebar-btn');
         const customBar = document.getElementById('custom-bar');
 
