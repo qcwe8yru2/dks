@@ -4,23 +4,23 @@
 <link rel=icon href=pizetalogo2.png>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>π-ζ 게시판</title>
+    <title>Ansingi</title>
     <style>
 
     #nitwit {
         position: absolute;
-        top: 10px; /* 게시판 위에 위치하도록 조정 */
+        top: 10px;
         right: 190px;
-        width: 70px; /* 이미지 크기 조절 */
+        width: 70px;
         height: auto;
-        z-index: 100; /* 게시판보다 앞에 위치 */
+        z-index: 100;
     }
 
     @media (max-width: 600px) {
         #nitwit {
-            top: 7px; /* 모바일에서 더 작은 위치 조정 */
-            right: 20px; /* 오른쪽에서 간격 조정 */
-            width: 50px; /* 모바일 화면에서는 더 작은 크기 */
+            top: 7px;
+            right: 20px;
+            width: 50px;
         }
     }	    
 
@@ -334,7 +334,7 @@
 
                 document.getElementById('message').focus();
             } else {
-                alert('이름과 메시지를 모두 입력하세요!');
+                alert('이름과 메시지를 둘 다 입력하세요!');
             }
         }
 
@@ -343,9 +343,9 @@
             if (confirmation === '309') {
                 const messageRef = ref(database, `messages/${key}`);
                 remove(messageRef);
-                alert('메시지가 삭제되었습니다.');
+                alert('Message deleted');
             } else {
-                alert('잘못된 코드입니다. 삭제가 취소되었습니다.');
+                alert('Wrong key');
             }
         }
 
@@ -396,7 +396,6 @@
             scrollToBottom();
         });
 
-        // 스타일 적용
         const fontSizeControl = document.getElementById('font-size-control');
         const fontColorControl = document.getElementById('font-color-control');
         const boldToggle = document.getElementById('bold-toggle');
